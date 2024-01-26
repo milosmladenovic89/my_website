@@ -8,7 +8,7 @@ import { Navigation } from "./NavBarComponents/Navigation";
 const width = `calc(100% - 40px)`
 
 const sidebar = {
-  
+
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at ${width} 40px)`,
     transition: {
@@ -39,11 +39,12 @@ export default function NavBar() {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
+
     >
-      
+
       <motion.div className="background" variants={sidebar} />
-      <Navigation toggleOpen={toggleOpen}/>
-      <MenuToggle  toggle={() => toggleOpen()} />
+      <Navigation toggleOpen={toggleOpen} />
+      <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );
 };
