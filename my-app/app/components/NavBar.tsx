@@ -45,6 +45,7 @@ export default function NavBar() {
       <motion.div className="background" variants={sidebar} />
       <Navigation toggleOpen={toggleOpen} />
       <MenuToggle toggle={() => toggleOpen()} />
+      
     </motion.nav>
   );
 };
