@@ -1,4 +1,4 @@
-'use client'
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 import img1 from '../../../public/images/m3.gif'

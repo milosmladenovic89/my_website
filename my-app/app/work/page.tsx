@@ -1,6 +1,7 @@
 
 
-export default function WorkPage() {
+export default async function WorkPage() {
+
   return (
     <div>
    

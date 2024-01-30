@@ -39,7 +39,7 @@ export default function NavBar() {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-
+    
     >
 
       <motion.div className="background" variants={sidebar} />

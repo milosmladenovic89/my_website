@@ -13,15 +13,18 @@ export const metadata: Metadata = {
   description: "Frontend Developer",
 };
 
-export default function RootLayout({
+export default  function RootLayout({
+
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar/>
+        <NavBar />
         {children}
       </body>
     </html>
