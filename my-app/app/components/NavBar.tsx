@@ -28,7 +28,10 @@ const sidebar = {
   }
 };
 
+
+
 export default function NavBar() {
+
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
@@ -44,7 +47,7 @@ export default function NavBar() {
       <motion.div className="background" variants={sidebar} />
       <Navigation toggleOpen={toggleOpen} />
       <MenuToggle toggle={() => toggleOpen()} />
-      
+
     </motion.nav>
   );
 };

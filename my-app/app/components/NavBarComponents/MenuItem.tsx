@@ -54,6 +54,7 @@ export const MenuItem = ({ i }: any) => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
+    
     >
 
       <Link href={links[i].href} className="capitalize flex items-center">

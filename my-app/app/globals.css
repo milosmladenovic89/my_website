@@ -5,6 +5,7 @@
 
 body {
    background-color: #1e2125;
+   overflow: auto;
 }
 
 nav {
@@ -25,7 +26,7 @@ nav {
    background: #f5efe5;
    z-index: 10;
    position: fixed;
-   
+
 }
 
 button {
@@ -58,37 +59,24 @@ ul {
    margin-left: auto;
    margin-right: auto;
    top: 100px;
-   position: absolute;
+   position: fixed;
 
 }
 
-/*
-li {
-   list-style: none;
-   margin-bottom: 20px;
-   display: flex;
-   align-items: center;
-   cursor: pointer;
+.container-logo {
+   background-image: linear-gradient(180deg, #212529 33.81017736486486%, #343A40 180.73638212317918%);
+
 }
 
-
-.icon-placeholder {
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
-   flex: 40px 0;
-   margin-right: 20px;
+.item-logo {
+   stroke-linejoin: round;
+   stroke-linecap: round;
 }
 
-
-.text-placeholder {
-   border-radius: 5px;
-   width: 150px;
-   height: 20px;
-   flex: 1;
-   align-items: center;
+.my-background {
+   background-image: linear-gradient(119deg, #212529 33.81017736486486%, #343A40 119.73638212317918%);
 }
-*/
+
 .refresh {
    padding: 10px;
    position: absolute;
