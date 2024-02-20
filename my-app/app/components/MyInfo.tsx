@@ -12,13 +12,12 @@ function SectionText0({ children }: any) {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
     return (
-        <section ref={ref} className="flex overflow-hidden w-full h-full  items-center justify-center mt-20">
+        <section ref={ref} className="flex overflow-hidden w-full h-full  items-center justify-center mt-20 md:mt-10">
             <span
                 className='w-full 2xl:w-2/3 h-3/4'
                 style={{
-
                     transform: isInView ? "translateY(0)" : "translateY(20%)",
-                    transition: 'all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s',
+                    transition: 'all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
                     opacity: isInView ? 1 : 0
                 }}
             >
@@ -47,19 +46,19 @@ export default function MyInfo() {
                     </div>
 
                     <div className='flex justify-items-start my-10 md:my-20'>
-                        <p className='border border-gray-700 p-1 rounded-2xl flex items-center hover:bg-gray-700 hover:scale-95 transition ease-in-out duration-300'>
+                        <p className='border border-gray-700 p-1 rounded-2xl flex items-center hover:bg-gray-700 hover:scale-95 transition ease-in-out duration-300 cursor-pointer'>
                             <span className="material-symbols-outlined text-3xl  text-gray-400 py-3 px-4 ">
                                 contact_mail
                             </span>
                         </p>
 
-                        <p className='border border-gray-700 p-1 flex items-center rounded-2xl mx-2  hover:bg-gray-700 hover:scale-95 transition ease-in-out duration-300'>
+                        <p className='border border-gray-700 p-1 flex items-center rounded-2xl mx-2  hover:bg-gray-700 hover:scale-95 transition ease-in-out duration-300 cursor-pointer'>
                             <span className="material-symbols-outlined text-3xl  text-gray-400 py-3 px-4">
                                 sports_baseball
                             </span>
                         </p>
 
-                        <p className='border border-gray-700 p-1 flex items-center rounded-2xl hover:bg-gray-700 hover:scale-95 transition ease-in-out duration-300'>
+                        <p className='border border-gray-700 p-1 flex items-center rounded-2xl hover:bg-gray-700 hover:scale-95 transition ease-in-out duration-300 cursor-pointer'>
                             <span className="material-symbols-outlined text-3xl  text-gray-400 py-3 px-4">
                                 psychology
                             </span>
@@ -70,6 +69,10 @@ export default function MyInfo() {
                 </div>
 
             </div>
+             <div className='border-r border-gray-700  w-1/2 h-48 relative'>
+             <span className="right absolute right-0 top-0 h-0 w-px"></span>
+             </div>
+            
         </SectionText0>
     )
 }

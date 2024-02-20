@@ -6,6 +6,7 @@
 body {
    background-color: #1e2125;
    overflow: auto;
+
 }
 
 nav {
@@ -69,25 +70,73 @@ ul {
 }
 
 .item-logo {
+
    stroke-linejoin: round;
    stroke-linecap: round;
+
 }
+
+
+
 
 .my-background {
    background-image: linear-gradient(119deg, #212529 33.81017736486486%, #343A40 119.73638212317918%);
 }
 
-.refresh {
-   padding: 10px;
-   position: absolute;
-   background: rgba(0, 0, 0, 0.4);
-   border-radius: 10px;
-   width: 20px;
-   height: 20px;
-   top: 10px;
-   right: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   cursor: pointer;
+
+.right {
+   background: linear-gradient(180deg,
+         transparent 30%,
+         rgba(0, 255, 255, 0.5),
+         rgb(0, 255, 255));
+   animation: animateRight 1.5s ease-in infinite;
+
+}
+
+@keyframes animateRight {
+
+   0%,
+   25% {
+      opacity: 1;
+      height: 50%;
+      top: -15%;
+   }
+
+   50% {
+      opacity: 0.3;
+      height: 100%;
+   }
+
+   55%,
+   100% {
+      height: 50%;
+      opacity: 0;
+   }
+}
+
+.glow-border {
+   -webkit-box-shadow: 0px 0px 88px 25px rgba(216, 230, 226, 0.47);
+   -moz-box-shadow: 0px 0px 88px 25px rgba(216, 230, 226, 0.47);
+   box-shadow: 0px 0px 88px 25px rgba(216, 230, 226, 0.47);
+}
+
+.top-border {
+   background: linear-gradient(180deg,
+         transparent 30%,
+         rgba(0, 255, 255, 0.5),
+         rgb(0, 255, 255));
+   animation: animateTop 1.5s ease-in infinite;
+   animation-delay: 3.7s;
+}
+
+@keyframes animateTop {
+   25% {
+      width: 100%;
+      opacity: 0.1;
+   }
+
+   30%,
+   100% {
+      opacity:0;
+   }
 }
