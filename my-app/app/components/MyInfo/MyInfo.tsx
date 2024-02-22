@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import ImageOfMe from '../../public/images/S-Profile-Image-BG-1.png'
+import ImageOfMe from '../../../public/images/S-Profile-Image-BG-1.png'
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
 
@@ -12,12 +12,12 @@ function SectionText0({ children }: any) {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
     return (
-        <section ref={ref} className="flex overflow-hidden w-full h-full  items-center justify-center mt-20 md:mt-10">
+        <section ref={ref} className="flex  w-full h-full  items-center justify-center mt-20 md:mt-10">
             <span
-                className='w-full 2xl:w-2/3 h-3/4'
+                className='w-1200p'
                 style={{
-                    transform: isInView ? "translateY(0)" : "translateY(20%)",
-                    transition: 'all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+                    transform: isInView ? "translateY(0)" : "translateY(50px)",
+                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
                     opacity: isInView ? 1 : 0
                 }}
             >

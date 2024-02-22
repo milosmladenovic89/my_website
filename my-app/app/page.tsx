@@ -1,6 +1,8 @@
-import MyInfo from "./components/MyInfo";
-import { MyLogo } from "./components/MyLogo";
-import WhatiDo from "./components/WhatiDo";
+import MyInfo from "./components/MyInfo/MyInfo";
+import { MyLogo } from "./components/MyInfo/MyLogo";
+import WhatiDo from "./components/MyInfo/WhatiDo";
+import Resume from "./components/Resume/Resume";
+
 
 
 export default async function Home() {
@@ -12,6 +14,7 @@ export default async function Home() {
       <MyLogo />
       <MyInfo />
       <WhatiDo />
+      <Resume />
     </main>
   );
 }

@@ -4,7 +4,7 @@ import { useDimensions } from "./NavBarComponents/use-Dimensions";
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./NavBarComponents/MenuToggle";
-import { Navigation } from "./NavBarComponents/Navigation";
+import { Navigation } from "./MyInfo/Navigation";
 const width = `calc(100% - 40px)`
 
 const sidebar = {

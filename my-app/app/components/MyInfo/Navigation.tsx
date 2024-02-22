@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { MenuItem } from "./MenuItem";
+import { MenuItem } from "../NavBarComponents/MenuItem";
 
 
 const variants = {

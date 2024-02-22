@@ -76,7 +76,9 @@ ul {
 
 }
 
-
+.box-grid-div {
+   background: linear-gradient(129deg, rgb(33, 37, 41) 0%, rgb(52, 58, 64) 205%);
+}
 
 
 .my-background {
@@ -126,7 +128,7 @@ ul {
          rgba(0, 255, 255, 0.5),
          rgb(0, 255, 255));
    animation: animateTop 1.5s ease-in infinite;
-   animation-delay: 3.7s;
+   animation-delay: 3.6s;
 }
 
 @keyframes animateTop {
@@ -137,6 +139,9 @@ ul {
 
    30%,
    100% {
-      opacity:0;
+      opacity: 0;
    }
+}
+.my-info{
+   background: linear-gradient(111deg, rgb(33, 37, 41) 21.5634%, rgb(52, 58, 64) 188.81%);
 }
