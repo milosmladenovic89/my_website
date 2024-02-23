@@ -33,7 +33,7 @@ function SectionGridDiv({ children }: any) {
                 className='w-full sm:w-2/3 md:w-full mx-auto'
                 style={{
                     transform: isInView ? "translateY(0)" : "translateY(50px)",
-                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 1s',
+                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 1.2s',
                     opacity: isInView ? 1 : 0
                 }}
             >
@@ -52,7 +52,7 @@ function SectionGridDiv2({ children }: any) {
                 className='w-full  mx-auto'
                 style={{
                     transform: isInView ? "translateY(0)" : "translateY(50px)",
-                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 1s',
+                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 1.2s',
                     opacity: isInView ? 1 : 0
                 }}
             >
