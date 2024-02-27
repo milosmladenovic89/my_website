@@ -130,7 +130,9 @@ ul {
    animation: animateTop 1.5s ease-in infinite;
    animation-delay: 3.6s;
 }
-
+.bg-for-skills{
+   background: linear-gradient(270deg, rgb(248, 249, 250) 0%, rgb(52, 58, 64) 100%);
+}
 @keyframes animateTop {
    25% {
       width: 100%;

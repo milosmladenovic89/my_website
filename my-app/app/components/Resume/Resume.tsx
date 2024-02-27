@@ -3,6 +3,7 @@
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import Skills from "./Skills"
+import Carousel from "../Carousel/Carousel"
 
 
 function SectionLineUp({ children }: any) {
@@ -14,7 +15,7 @@ function SectionLineUp({ children }: any) {
                 className='w-full sm:w-1/4'
                 style={{
                     transform: isInView ? "translateY(0)" : "translateY(150px)",
-                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 1.2s',
+                    transition: 'all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.2s',
                     opacity: isInView ? 1 : 0
                 }}
             >
@@ -32,7 +33,7 @@ function SectionResume({ children }: any) {
                 className='w-full'
                 style={{
                     transform: isInView ? "translateY(0)" : "translateY(50px)",
-                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 1.2s',
+                    transition: 'all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.2s',
                     opacity: isInView ? 1 : 0
                 }}
             >
@@ -162,6 +163,8 @@ export default function Resume() {
 
 
             <Skills/>
+
+            <Carousel/>
 
         </div>
     )
