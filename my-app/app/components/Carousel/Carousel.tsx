@@ -4,7 +4,7 @@ export default function Carousel() {
     return (
         <div className="w-full lg:w-1200p mx-auto mt-80 text-center">
 
-            <div className="carousel carousel-center w-1/2 h-96 p-4 space-x-4 bg-neutral rounded-box">
+            <div className="mx-auto carousel carousel-center w-full lg:w-1/2 h-96 p-4 space-x-4 bg-neutral rounded-box">
 
                 <div id="item1" className="carousel-item w-3/4">
                     <div className="border border-gray-700 rounded-2xl    h-full box-grid-div w-full"></div>
