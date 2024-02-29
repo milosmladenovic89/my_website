@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import ImageOfMe from '../../../public/images/S-Profile-Image-BG-1.png'
+import ImageOfMe from '../../../public/images/me3.png'
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
 
