@@ -1,9 +1,9 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import img1 from '../../../public/images/m3.gif'
+import img1 from '../../../public/images/m3.png'
 import img2 from '../../../public/images/m2.png'
-import img3 from '../../../public/images/m1.gif'
+import img3 from '../../../public/images/me1.png'
 import img4 from '../../../public/images/m4.jpg'
 import img5 from '../../../public/images/m5.jpg'
 import Image from "next/image";
