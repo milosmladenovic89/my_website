@@ -15,7 +15,7 @@ function SectionLogo({ children }: any) {
         className='w-full'
         style={{
           transform: isInView ? "translateY(0)" : "translateY(-50px)",
-          transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s',
           opacity: isInView ? 1 : 0
         }}
       >

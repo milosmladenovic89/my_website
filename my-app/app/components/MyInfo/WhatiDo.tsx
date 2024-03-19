@@ -14,8 +14,8 @@ function SectionLineUp({ children }: any) {
                 className='w-full sm:w-1/4'
                 style={{
                     transform: isInView ? "translateY(0)" : "translateY(400px)",
-                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-                    opacity: isInView ? 1 : 0
+                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s',
+                    opacity: isInView ? 1 : 0.5
                 }}
             >
                 {children}
@@ -32,9 +32,9 @@ function SectionGridDiv({ children }: any) {
             <span
                 className='w-full sm:w-2/3 md:w-full mx-auto'
                 style={{
-                    transform: isInView ? "translateY(0)" : "translateY(50px)",
-                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-                    opacity: isInView ? 1 : 0
+                    transform: isInView ? "translateY(0)" : "translateY(450px)",
+                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s',
+                    opacity: isInView ? 1 : 0.5
                 }}
             >
                 {children}
@@ -51,9 +51,9 @@ function SectionGridDiv2({ children }: any) {
             <span
                 className='w-full  mx-auto'
                 style={{
-                    transform: isInView ? "translateY(0)" : "translateY(50px)",
-                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-                    opacity: isInView ? 1 : 0
+                    transform: isInView ? "translateY(0)" : "translateY(450px)",
+                    transition: 'all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s',
+                    opacity: 1
                 }}
             >
                 {children}
@@ -120,7 +120,7 @@ export default function WhatiDo() {
 
             <div className="lg:w-800p xl:w-1200p mx-auto">
 
-                <div className="grid grid-cols-1  xl:grid-cols-3 w-full  mx-auto gap-5 mt-40 ">
+                <div className="grid grid-cols-1  xl:grid-cols-3 w-full  mx-auto gap-5 mt-40">
 
                     <SectionGridDiv2>
                         <div className="border border-gray-700 rounded-2xl  gap-1  h-96 box-grid-div"></div>
