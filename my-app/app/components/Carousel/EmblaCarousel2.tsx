@@ -7,6 +7,7 @@ import img4 from '../../../public/images/m4.jpg'
 import img5 from '../../../public/images/m5.jpg'
 
 const images = [ img1,img2,img3,img4,img5]
+const skills = ["Css","Html","JavaScript","TailwindCss","React","NextJs","FramerMotion","PhotoShop","AdobeIllustrator"]
 
 import React, { useEffect } from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
@@ -19,6 +20,7 @@ type PropType = {
   options?: EmblaOptionsType
 }
 
+/*<Image src={images[index].src} alt="img" width={50} height={50}/>*/
 const EmblaCarousel2: React.FC<PropType> = (props) => {
   const { slides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
@@ -35,13 +37,16 @@ const EmblaCarousel2: React.FC<PropType> = (props) => {
   }, [emblaApi])
 
   return (
-    <div className="embla2">
+    <div className="embla2 border border-gray-700 border-l-0 border-r-0">
       <div className="embla__viewport2" ref={emblaRef}>
         <div className="embla__container2">
           {slides.map((index:number) => (
             <div className="embla__slide2" key={index}>
               <div className="embla__slide__number2">
-                <Image src={img1.src} alt="img" width={50} height={50}/>
+                
+                <span className="text-sm md:text-2xl text-gray-400" >{skills[index]}</span>
+                
+                
               </div>
             </div>
           ))}

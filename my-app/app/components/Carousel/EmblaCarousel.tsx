@@ -20,18 +20,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi)
 
-  const {
-    prevBtnDisabled,
-    nextBtnDisabled,
-    onPrevButtonClick,
-    onNextButtonClick
-  } = usePrevNextButtons(emblaApi)
+  const {} = usePrevNextButtons(emblaApi)
 
   return (
     <section className="embla w-full">
 
 
-      <div className="embla__viewport" ref={emblaRef}>
+      <div className="embla__viewport " ref={emblaRef}>
 
         <div className="embla__container">
           {slides.map((index) => (
@@ -44,9 +39,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
       </div>
 
-      <div className="embla__controls">
     
-        <div className="embla__dots ">
+      <div className="embla__dots ">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
@@ -57,9 +51,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             />
           ))}
         </div>
-
-        
-      </div>
     </section>
   )
 }

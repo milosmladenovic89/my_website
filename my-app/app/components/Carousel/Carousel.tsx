@@ -15,7 +15,7 @@ export default function Carousel() {
 
     return (
         <div>
-            <div className="w-full lg:w-800p mx-auto mt-80">
+            <div className="w-full xl:w-1200p mx-auto mt-80 embla-container1">
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} />
             </div>
 
