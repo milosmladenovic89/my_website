@@ -6,7 +6,7 @@ import img2 from '../../../public/images/m2.png'
 import img3 from '../../../public/images/me1.png'
 import img4 from '../../../public/images/m4.jpg'
 import img5 from '../../../public/images/m5.jpg'
-import Image from "next/image";
+
 
 const variants = {
   open: {
@@ -30,7 +30,7 @@ const links = [
   { href: '/about', label: 'about' },
   { href: '/work', label: 'work' },
   { href: '/', label: 'home' },
-  { href: '/1', label: '1' },
+  { href: '/projects', label: 'projects' },
   { href: '/2', label: '2' }
 
 ]

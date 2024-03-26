@@ -2,7 +2,13 @@
 
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-
+import computer from '../../../public/images/computer.svg'
+import ux from '../../../public/images/ux.svg'
+import responsive from '../../../public/images/responsive.svg'
+import code from '../../../public/images/code.svg'
+import settings from '../../../public/images/settings.svg'
+import search from '../../../public/images/search.svg'
+import Image from "next/image"
 
 
 function SectionLineUp({ children }: any) {
@@ -85,22 +91,77 @@ export default function WhatiDo() {
                 <div className="grid  sm:grid-cols-1 md:grid-cols-2   xl:grid-cols-3    mx-auto gap-5 mt-40 ">
 
                     <SectionGridDiv>
-                        <div className="border border-gray-700 rounded-2xl  gap-1  h-80 box-grid-div"></div>
+
+                        <div className="div-box-whatIdo border border-gray-700 rounded-2xl group  gap-1  h-80 box-grid-div p-10  duration-500 ease-in-out hover:border-gray-400">
+
+                            <div className="flex justify-between flex-col h-full  duration-500 ease-in-out group-hover:-translate-y-2">
+                                <Image src={computer} alt="computer" width={50} height={50} />
+                                <p className="text-white text-2xl ">UI Design</p>
+                                <p className="text-gray-400 text-sm sm:text-base tracking-wider"> Craft visually appealing and consistent user interfaces that align with brand guidelines, including style guides.</p>
+                            </div>
+
+
+                        </div>
+                    </SectionGridDiv>
+
+                    <SectionGridDiv>
+                        <div className="div-box-whatIdo border border-gray-700 rounded-2xl group  gap-1  h-80 box-grid-div p-10  duration-500 ease-in-out hover:border-gray-400">
+
+                            <div className="flex justify-between flex-col h-full  duration-500 ease-in-out group-hover:-translate-y-2">
+                                <Image src={ux} alt="computer" width={50} height={50} />
+                                <p className="text-white text-2xl ">Ux Design</p>
+                                <p className="text-gray-400 text-sm sm:text-base tracking-wider">Turning applications into something that people enjoy using.Developing wireframes and task flows based on user needs.</p>
+                            </div>
+
+
+                        </div>
                     </SectionGridDiv>
                     <SectionGridDiv>
-                        <div className="border border-gray-700 rounded-2xl  gap-1  h-80 box-grid-div"></div>
+                        <div className="div-box-whatIdo border border-gray-700 rounded-2xl group  gap-1  h-80 box-grid-div p-10  duration-500 ease-in-out hover:border-gray-400">
+
+                            <div className="flex justify-between flex-col h-full  duration-500 ease-in-out group-hover:-translate-y-2">
+                                <Image src={responsive} alt="computer" width={50} height={50} />
+                                <p className="text-white text-2xl ">Responsive design</p>
+                                <p className="text-gray-400 text-sm sm:text-base tracking-wider"> Build applications that adapt and work well across different devices and screen sizes.</p>
+                            </div>
+
+
+                        </div>
                     </SectionGridDiv>
                     <SectionGridDiv>
-                        <div className="border border-gray-700 rounded-2xl  gap-1  h-80 box-grid-div"></div>
+                        <div className="div-box-whatIdo border border-gray-700 rounded-2xl group  gap-1  h-80 box-grid-div p-10  duration-500 ease-in-out hover:border-gray-400">
+
+                            <div className="flex justify-between flex-col h-full  duration-500 ease-in-out group-hover:-translate-y-2">
+                                <Image src={code} alt="computer" width={50} height={50} />
+                                <p className="text-white text-2xl ">Code management</p>
+                                <p className="text-gray-400 text-sm sm:text-base tracking-wider">Write well-structured code that is easy to maintain and understand.</p>
+                            </div>
+
+
+                        </div>
                     </SectionGridDiv>
                     <SectionGridDiv>
-                        <div className="border border-gray-700 rounded-2xl  gap-1  h-80 box-grid-div"></div>
+                        <div className="div-box-whatIdo border border-gray-700 rounded-2xl group  gap-1  h-80 box-grid-div p-10  duration-500 ease-in-out hover:border-gray-400">
+
+                            <div className="flex justify-between flex-col h-full  duration-500 ease-in-out group-hover:-translate-y-2">
+                                <Image src={settings} alt="computer" width={50} height={50} />
+                                <p className="text-white text-2xl ">Maintain website</p>
+                                <p className="text-gray-400 text-sm sm:text-base tracking-wider"> Keeping a website up-to-date and running smoothly as well as performing optimally.</p>
+                            </div>
+
+
+                        </div>
                     </SectionGridDiv>
                     <SectionGridDiv>
-                        <div className="border border-gray-700 rounded-2xl  gap-1  h-80 box-grid-div"></div>
-                    </SectionGridDiv>
-                    <SectionGridDiv>
-                        <div className="border border-gray-700 rounded-2xl  gap-1  h-80 box-grid-div"></div>
+                        <div className="div-box-whatIdo border border-gray-700 rounded-2xl group  gap-1  h-80 box-grid-div p-10  duration-500 ease-in-out hover:border-gray-400">
+
+                            <div className="flex justify-between flex-col h-full  duration-500 ease-in-out group-hover:-translate-y-2">
+                                <Image src={search} alt="computer" width={50} height={50} />
+                                <p className="text-white text-2xl ">SEO</p>
+                                <p className="text-gray-400 text-sm sm:text-base tracking-wider">Optimizing your site for SEO makes it easier for internet searchers to find your content, products, and services..</p>
+                            </div>
+
+                        </div>
                     </SectionGridDiv>
 
                 </div>
